@@ -155,6 +155,7 @@ header .countingBasket2 {
 /*iconga style berish*/
 header .top .iconStyle {
     padding: 0 8px;
+    cursor: pointer;
 }
 
 header .top .iconStyle span:nth-child(1) {
