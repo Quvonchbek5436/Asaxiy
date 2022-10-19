@@ -142,7 +142,7 @@ const Header = () => {
                     <div className="search w-100">
                         <div className="button-box d-flex iconStyle justify-content-center p-0">
                             <input type="text"
-                                   placeholder={'Qidirish...'}/>
+                                   placeholder={'Искать...'}/>
                             <button type={'button'}><FiSearch/> Искать</button>
                         </div>
                     </div>
