@@ -19,7 +19,6 @@ const About = () => {
         let cards = document.querySelectorAll('.card-header');
         cards.forEach(card => {
             card.addEventListener('click', () => {
-                console.log(1);
                 if (card.querySelector('.collapse').classList.contains('show')) {
                     card.querySelector('.collapse').classList.remove('show');
                 } else {

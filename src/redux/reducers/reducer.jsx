@@ -410,8 +410,6 @@ const reducer = (state = initialState, action) => {
                 newBasket.push(product)
             }
 
-            console.log(newBasket)
-
             return {...state, basket: newBasket};
 
         case t.REMOVE_BASKET:

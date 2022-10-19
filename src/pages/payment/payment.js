@@ -8,7 +8,6 @@ import './payment.css'
 const Payment = () => {
     const [open, setOpen] = useState(false)
     const onchangeFunc = (e) => {
-        console.log(e.target.value)
         if (e.target.value === '') {
             setOpen(true)
         }

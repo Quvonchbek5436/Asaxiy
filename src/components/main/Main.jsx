@@ -126,7 +126,7 @@ const  Main=()=> {
                                      src="https://assets.asaxiy.uz/product/main_image/mobile//62696262ae51d.jpg.webp"
                                      alt=""/>
                                 <div>
-                                    <p className={'fw-bold m-0 w-100 elleps'} style={{}}>Дарон Ажемўғли, Жеймс А.
+                                    <p className={'fw-bold m-0 w-100 elleps'}>Дарон Ажемўғли, Жеймс А.
                                         Робинсон: Мамлакатлар таназзули сабаблари: қудрат, фаровонлик ва камбағаллик
                                         манбалари (қаттиқ муқова)</p>
                                     <p style={{fontSize: '14px', color: '#858997'}}>Asaxiy Books китоблари</p>

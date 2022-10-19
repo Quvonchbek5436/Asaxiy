@@ -84,16 +84,14 @@ const Header = () => {
     const [openMenu, setOpenMenu] = useState(false)
     const [isLikeCount, setIsLikeCount] = useState(0)
     const [isBasketCount, setIsBasketCount] = useState(0)
-    // const [isBasketCount] = useState([])
     const [allPrice, setAllPrice] = useState(0)
-    const [dataBasket, setDataBasket] = useState([])
     const keyListItems = useRef([]);
 
-    const navigate=useNavigate()
+    const navigate = useNavigate()
 
     useEffect(() => {
         let isMounted = true;
-        let arr = [],basketArr=[];
+        let arr = [], basketArr = [];
         InitialState.products.forEach((d) => {
             if (d.isLike === true) {
                 arr.push(d)
@@ -104,17 +102,15 @@ const Header = () => {
                 arr.push(d)
             }
         })
-        let sum = 0,count=0;
+        let sum = 0;
         InitialState.basket.forEach((d) => {
-            sum+=parseInt(d.price.split(" ").join(""));
+            sum += parseInt(d.price.split(" ").join("")) * d.count;
             basketArr.push(d)
         })
 
-        console.log(sum)
         setAllPrice(sum)
         setIsBasketCount(InitialState.basket.length)
         setIsLikeCount(arr.length)
-        console.log(InitialState.basket);
         return () => isMounted = false;
     }, [InitialState]);
 
@@ -130,8 +126,6 @@ const Header = () => {
     useEffect(() => {
         let isMounted = true;
         let header_containers = document.querySelectorAll('.header_container');
-
-        console.log(keyListItems.current);
         keyListItems.current.forEach((li, index) => {
             li.addEventListener('mouseover', () => {
                 clearFunction(header_containers);
@@ -147,7 +141,7 @@ const Header = () => {
         <header className={'position-relative '}>
             <div className="container d-flex justify-content-between align-items-center top gap-1">
                 <div className="d-flex" style={{width: 'calc(100% - 512px)'}}>
-                    <div className="logo me-2"  onClick={()=>navigate('/')}>
+                    <div className="logo me-2" onClick={() => navigate('/')}>
                         <img src="https://asaxiy.uz/custom-assets/images/logos/asaxiy-logo.svg" alt=""/>
                     </div>
                     <div className="search w-100">
@@ -160,7 +154,7 @@ const Header = () => {
                 </div>
                 <div className="d-flex align-items-center gap-2 right" style={{width: '512px'}}>
                     <div className="payment d-flex  ms-2 justify-content-center">
-                        <div className="cards iconStyle" onClick={()=>navigate('/payment')} title={'Оплатить'}>
+                        <div className="cards iconStyle" onClick={() => navigate('/payment')} title={'Оплатить'}>
                             <span><BsCreditCard/></span>
                             <span>Оплатить</span>
                         </div>
@@ -190,7 +184,7 @@ const Header = () => {
                                                   alt=""/>
                                              <p className={'elleps'}
                                                 style={{fontSize: '12px', width: '200px'}}>
-                                                 {item.name} {item.count !== 1 && `(${item.count}x)`}
+                                                 {item.name} {`(${item.count}x)`}
                                              </p>
 
                                          </div>
@@ -229,7 +223,7 @@ const Header = () => {
                            </div>
                         </div></span>
                         </div>
-                        <div className="lovely iconStyle " onClick={()=>navigate('/save/favourites')}>
+                        <div className="lovely iconStyle " onClick={() => navigate('/save/favourites')}>
                             <span className={'position-relative'}><BsSuitHeart/><span
                                 className={'countingBasket2'}>{isLikeCount}</span></span>
                             <span><span>Избранное</span></span>
@@ -273,9 +267,10 @@ const Header = () => {
                 <div className={'keys'}>
                     <ul className='keys_list'>
                         {data?.length > 0 && data.map((dat, index) => (
-                            <li key={index} className="keys_list_item" ref={(element) => keyListItems.current[index] = element}>
+                            <li key={index} className="keys_list_item"
+                                ref={(element) => keyListItems.current[index] = element}>
                                 <a href="#1">
-                                    <img src={dat.imgSrc} alt="" />
+                                    <img src={dat.imgSrc} alt=""/>
                                     <span>{dat.title}</span>
                                 </a>
                             </li>
@@ -284,10 +279,10 @@ const Header = () => {
                 </div>
                 <div className="values">
                     {/* Книги */}
-                    <Books />
+                    <Books/>
 
                     {/* phones */}
-                    <Phones />
+                    <Phones/>
                 </div>
             </div>
 
