@@ -1,0 +1,49 @@
+
+
+/*.default-btn {*/
+/*    border: none;*/
+/*    z-index: 1;*/
+/*    font-size: 12px;*/
+/*    color: #fff;*/
+/*    border-radius: 10px;*/
+/*    background-color: #00cd98;*/
+/*    cursor: pointer;*/
+/*    text-align: center;*/
+/*    vertical-align: middle;*/
+/*    user-select: none;*/
+/*    position: relative;*/
+/*    min-height: 40px;*/
+/*}*/
+
+/* .default-btn span {*/
+/*    position: absolute;*/
+/*    z-index: 15;*/
+/*    top: 50%;*/
+/*    left: 50%;*/
+/*    transform: translate(-50%, -50%);*/
+/*}*/
+
+/*.default-btn::before {*/
+/*    transform: scaleX(0);*/
+/*    transform-origin: bottom left;*/
+/*}*/
+
+/*.default-btn:hover::before {*/
+/*    transform: scaleX(1);*/
+/*    transform-origin: bottom left;*/
+/*}*/
+
+/*.default-btn::before {*/
+/*    content: " ";*/
+/*    display: block;*/
+/*    position: absolute;*/
+/*    top: 0;*/
+/*    right: 0;*/
+/*    bottom: 0;*/
+/*    left: 0;*/
+/*    inset: 0 0 0 0;*/
+/*    background: rgba(0, 0, 0, 0.4);*/
+/*    border-radius: 10px;*/
+/*    transition: transform .3s ease;*/
+/*    z-index: 9;*/
+/*}*/

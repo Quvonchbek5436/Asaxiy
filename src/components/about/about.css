@@ -1,0 +1,57 @@
+.about_wrapper {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 20px;
+    margin-bottom: 40px;
+}
+
+.card {
+    cursor: pointer;
+    border: none !important;
+    border-radius: 20px !important;
+}
+
+#accordion {
+    border-radius: 20px !important;
+}
+
+.collapse {
+    border: 1px solid lightgray;
+    border-top: none;
+}
+
+.show {
+    animation: show .2s;
+}
+
+.card-body a {
+    text-decoration: none;
+}
+
+#headingOne {
+    border-top: 1px solid lightgray !important;
+    transition: 0.3s;
+}
+
+.card-header {
+    padding: 0 !important;
+    border: none !important;
+}
+
+.card-header h5 {
+    width: 100%;
+    height: 100%;
+    padding: 6px 0 !important;
+    border: 1px solid lightgray;
+    border-top: none;
+}
+
+@keyframes show {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

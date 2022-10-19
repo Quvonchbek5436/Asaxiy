@@ -1,0 +1,241 @@
+.footer_container {
+    background-color: #008dff;
+    padding: 40px 0;
+}
+
+/* footer top */
+.footer_top {
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 25px 50px;
+    margin-bottom: 40px;
+}
+
+.footerTopImg {
+    width: 50px;
+    height: 50px;
+}
+
+.footer_top_item {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    cursor: pointer;
+}
+
+.footer_top_item_child {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_top_item_child h5 {
+    font-size: 16px;
+    font-weight: 500;
+    color: #282830;
+    line-height: 19px;
+    margin-bottom: 4px;
+}
+
+.footer_top_item_child p {
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 21px;
+    color: #858997;
+}
+
+/* footer center */
+.footer_center {
+    color: #fff;
+}
+
+
+/* footer bottom */
+.footer_center h5 {
+    margin-bottom: 24px;
+}
+
+.footer_center_items {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_center_item {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+}
+
+.footer_center_item span {
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    line-height: 19px;
+    margin-bottom: 12px;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+    cursor: pointer;
+}
+
+.footer_center_item span:hover {
+    margin-left: 10px;
+}
+
+.footer_center_item svg {
+    margin-right: 10px;
+}
+
+.asaxiyWomanImg {
+    background-image: url("https://assets.asaxiy.uz/uploads/toptoday/desktop/634d4dada3dae.jpg");
+    background-position: center;
+    object-fit: cover;
+    background-size: cover;
+    width: 340px;
+    height: 130px;
+    position: relative;
+}
+
+.positions {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2));
+    padding: 8px;
+}
+
+.positions_top {
+    display: flex;
+    gap: 5px;
+}
+
+.positions_top img {
+    width: 54px;
+    height: 54px;
+    border: 2px solid #fff;
+    box-shadow: 0 1px 6px rgb(0 0 0 / 50%);
+    cursor: pointer;
+}
+
+.positions_top_img_name {
+    display: flex;
+    flex-direction: column;
+}
+
+.positions_top_img_name h5 {
+    margin-bottom: 0;
+    max-width: 240px;
+    color: #fff;
+    text-shadow: 0 2px 4px rgb(0 0 0 / 90%);
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.358;
+    margin-bottom: -5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-bottom: 1px;
+    cursor: pointer;
+    transition: all ease-in .15s;
+}
+
+.positions_top_img_name h5:hover {
+    text-decoration: underline;
+}
+
+.positions_top_img_name div {
+    max-width: 260px;
+    font-size: 12px;
+    line-height: 1.358;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-weight: 500;
+}
+
+.positions_bottom {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px;
+}
+
+.positions_bottom a {
+    border-radius: 2px;
+    box-sizing: content-box;
+    font-size: 12px;
+    -webkit-font-smoothing: antialiased;
+    font-weight: bold;
+    justify-content: center;
+    padding: 0 8px;
+    position: relative;
+    text-align: center;
+    text-shadow: none;
+    vertical-align: middle;
+    background-color: #fff;
+    border-color: #bec3c9;
+    color: #000;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    font-size: 12px;
+    transition: all ease-in .15s;
+}
+
+.positions_bottom a:hover {
+    color: #000;
+    background-color: rgb(245, 245, 245);
+}
+
+.footer_bottom hr {
+    border: 1px solid #fff;
+    margin: 1px 0;
+}
+
+.footer_title {
+    color: #fff;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center !important;
+    margin-top: 16px;
+    margin-bottom: 0;
+}
+
+.footer_bottom_center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    color: #fff;
+    font-style: normal;
+}
+
+.footer_bottom_center_item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer_bottom_center_item h6 {
+    font-size: 13px;
+    margin-bottom: 0;
+}
+
+.footer_bottom_center_item svg {
+    cursor: pointer;
+}
+
+.footer_bottom_center_item img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}

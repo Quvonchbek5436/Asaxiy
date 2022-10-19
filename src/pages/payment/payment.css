@@ -1,0 +1,56 @@
+.btnCard{
+background: #008dff !important;
+    color: white !important;
+}
+
+.btnCard {
+    display: block;
+    /*width: 100%;*/
+    border-radius: 10px;
+    min-height: 40px;
+}
+.btnCard span {
+    position: absolute;
+    z-index: 15;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.btnCard::before {
+    transform: scaleX(0);
+    transform-origin: bottom left;
+
+}
+
+.btnCard:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+
+}
+
+.btnCard::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    inset: 0 0 0 0;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    transition: transform .3s ease;
+    z-index: 9;
+}
+
+.btnCard{
+    display: block;
+    position: absolute;
+    /*top: 63px;*/
+    transition: .3s;
+    width: 116px;
+    z-index: 999;
+    /*transform: translateX(-325px);*/
+    /*right: 450px;*/
+}
