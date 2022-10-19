@@ -182,7 +182,7 @@ const  Main=()=> {
                                         </div>}
 
                                         <div className="product-image">
-                                            <img className='img-fluid' src={item.image} alt="product-image"/>
+                                            <img className='img-fluid' src={item.image} alt=""/>
                                         </div>
 
                                         <div className="product-info">
@@ -267,7 +267,7 @@ const  Main=()=> {
 
                                                         <div className="product-image">
                                                             <img className='img-fluid' src={item.image}
-                                                                 alt="product-image"/>
+                                                                 alt=""/>
                                                         </div>
 
                                                         <div className="product-info">

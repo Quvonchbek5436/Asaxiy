@@ -90,7 +90,6 @@ const Header = () => {
     const navigate = useNavigate()
 
     useEffect(() => {
-        let isMounted = true;
         let arr = [], basketArr = [];
         InitialState.products.forEach((d) => {
             if (d.isLike === true) {
@@ -107,11 +106,9 @@ const Header = () => {
             sum += parseInt(d.price.split(" ").join("")) * d.count;
             basketArr.push(d)
         })
-
         setAllPrice(sum)
         setIsBasketCount(InitialState.basket.length)
         setIsLikeCount(arr.length)
-        return () => isMounted = false;
     }, [InitialState]);
 
     let clearFunction = (header_containers) => {
@@ -124,7 +121,6 @@ const Header = () => {
 
     // hover <li> elements
     useEffect(() => {
-        let isMounted = true;
         let header_containers = document.querySelectorAll('.header_container');
         keyListItems.current.forEach((li, index) => {
             li.addEventListener('mouseover', () => {
@@ -134,7 +130,6 @@ const Header = () => {
             })
         })
 
-        return () => isMounted = false;
     }, [InitialState])
 
     return (

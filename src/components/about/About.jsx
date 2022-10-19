@@ -14,7 +14,6 @@ const About = () => {
 
     // collapse settings
     useEffect(() => {
-        let isMounted = true;
 
         let cards = document.querySelectorAll('.card-header');
         cards.forEach(card => {
@@ -28,7 +27,6 @@ const About = () => {
             })
         })
 
-        return () => isMounted = false;
     }, []);
 
     return (
